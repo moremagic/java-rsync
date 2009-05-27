@@ -3,3 +3,8 @@
 
 Once you get past the algorithm, it's all downhill, right?  This is my collection of documentation on everything rsync - a history, of sorts, of the learning process.
 
+==The Algorithm==
+
+The first (though not the best) resource for understanding the Rsync algorithm is the author himself. Accompanying the Rsync Web site is a concise explanation of how the algorithm works, including a mathematical explanation of "rolling checksums."
+
+http://www.samba.org/rsync/tech_report/tech_report.html
