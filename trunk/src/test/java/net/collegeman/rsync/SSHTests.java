@@ -23,7 +23,7 @@ public class SSHTests extends TestCase {
 	
 	private static String username = null;
 	
-	private static String host = "ssh.collegeman.net";
+	private static String host = "localhost";
 	
 	private static Connection conn;
 

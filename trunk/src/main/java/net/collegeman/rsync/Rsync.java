@@ -21,8 +21,6 @@ import org.springframework.util.Assert;
  * <p>Like the original rsync, the Adler-32 checksum is used for rolling checksum generation,
  * and MD5 is used for the strong checksum generation.</p>
  * 
- * 
- * 
  * @author Aaron Collegeman aaron@collegeman.net
  * @since 1.0.0
  */
