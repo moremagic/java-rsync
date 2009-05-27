@@ -1,9 +1,28 @@
 package net.collegeman.rsync;
 
+import java.util.List;
+import java.util.zip.Adler32;
+
 import junit.framework.TestCase;
+
+import org.springframework.util.CollectionUtils;
 
 public class RsyncTests extends TestCase {
 
+	public void testAdlerForRollingChecksum() {
+		Adler32 adler = new Adler32();
+		
+		String phrase = "There can be only one.";
+		byte[] inPhrase = phrase.getBytes();
+		
+		byte[] oneToTen = new byte[10];
+		for (int i=0; i<10; i++)
+			oneToTen[i] = inPhrase[i];
+		
+		adler.update(oneToTen);
+		long checksum = adler.getValue();
+	}
+	
 	public void testWeakRollingChecksum() {
 		String phrase = "There can be only one.";
 		String incongruent = "Unless there are two.";
