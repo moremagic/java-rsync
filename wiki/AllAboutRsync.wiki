@@ -14,3 +14,7 @@ http://www.samba.org/rsync/tech_report/tech_report.html
 zsync - Optimised rsync over HTTP
 
 http://zsync.moria.org.uk/paper/index.html
+
+A short guide to Java's primitive types
+
+http://java.sun.com/docs/books/tutorial/java/nutsandbolts/datatypes.html
