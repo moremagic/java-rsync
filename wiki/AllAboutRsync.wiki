@@ -12,4 +12,5 @@ http://www.samba.org/rsync/tech_report/tech_report.html
 ==Other resources I found useful==
 
 zsync - Optimised rsync over HTTP
+
 http://zsync.moria.org.uk/paper/index.html
