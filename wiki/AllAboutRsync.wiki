@@ -1,0 +1,5 @@
+#summary A collection of documentation on Rsync - the algorithm and the software.
+#labels Featured
+
+Once you get past the algorithm, it's all downhill, right?  This is my collection of documentation on everything rsync - a history, of sorts, of the learning process.
+
