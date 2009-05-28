@@ -1,5 +1,9 @@
 package net.collegeman.rsync.server;
 
+import net.collegeman.rsync.Settings;
+
+import org.apache.log4j.Logger;
+
 /**
  * Rsync daemon. 
  * 
@@ -10,6 +14,28 @@ package net.collegeman.rsync.server;
  */
 public class Daemon {
 
+	private static final Logger logger = Logger.getLogger(Daemon.class);
+	
+	private Settings settings;
+	
+	public Daemon(Settings settings) {
+		this.settings = settings;
+	}
+	
+	private static final void debug(Object obj) {
+		if (logger.isDebugEnabled())
+			logger.debug(obj);
+	}
+	
+	private static final void info(Object obj) {
+		if (logger.isInfoEnabled())
+			logger.info(obj);
+	}
+	
+	private static final void error(Object obj) {
+		logger.error(obj);
+	}
+	
 	
 
 }

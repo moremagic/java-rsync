@@ -4,10 +4,14 @@ import java.util.regex.Pattern;
 
 import net.collegeman.rsync.RsyncException;
 import net.collegeman.rsync.Settings;
+import net.collegeman.rsync.server.Daemon;
 
 public class Client {
 
 	private Settings settings;
+	
+	/** For local-to-local comparisons */
+	private Daemon daemon;
 	
 	// ssh connection string: [user@]host:dest
 	private Pattern ssh = Pattern.compile("([a-z0-9\\-_]+@)?[a-z0-9\\-_]+:[a-z0-9\\-_ ]+", Pattern.CASE_INSENSITIVE);
@@ -53,7 +57,8 @@ public class Client {
 	}
 	
 	private void setupLocal() {
-		
+		// create new local daemon
+		daemon = new Daemon(settings);
 	}
 	
 }
