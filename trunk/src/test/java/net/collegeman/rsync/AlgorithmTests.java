@@ -2,7 +2,7 @@ package net.collegeman.rsync;
 
 import junit.framework.TestCase;
 
-public class RsyncTests extends TestCase {
+public class AlgorithmTests extends TestCase {
 
 	public void testRelativePathAnalysis() {
 		String root = "c:\\test\\path";
